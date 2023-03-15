@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS STYLING</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="circle">
+            <h3>Login</h3>
+        </div>
+        <div class="circle2">
+            <h3>Signup</h3>
+        </div>
+        <form onsubmit="onSubmitFunction()">
+            <fieldset>
+                <h1 class="personal">Personal Data</h1>
+                <label for="fullname">Please Enter Your Fullname</label>
+                <input type="text" name="fullname" id="fullname" placeholder="John/Jane Doe" required="">
+                <br>
+                <label for="email">Please Enter Your Email Address</label>
+                <input type="email" name="email" id="email" placeholder="example@email.com" required="">
+                <span role="alert" id="nameError" aria-hidden="true">
+                    Please enter a valid email address
+                </span>
+                <br>
+
+                <label for="number">Phone number:</label>
+                <input type="tel" id="number" placeholder="+234-000-0000-000" required="">
+                <br>
+
+                <div class="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="Sex" value="male" required="">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="Sex" value="female" required="">
+                </div>
+                <br>
+
+                <label for="password">Input Password</label>
+                <input type="password" id="password" name="password" required="">
+                <button id="submit" type="submit" value="submit" class="form-btn">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript">
+        const signUp = document.querySelector('.form-btn');
+        signUp.addEventListener('click', () => {
+            console.log('Hey');
+        });
+        function onSubmitFunction() {
+            alert('You have Successfully submitted');
+        }
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
