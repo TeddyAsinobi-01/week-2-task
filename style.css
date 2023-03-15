@@ -111,3 +111,8 @@ label {
     cursor: pointer;
     background-color: rgb(32, 235, 32);
 }
+@media screen and (max-width: 800px){
+.circle{
+margin-left: 20px;
+}
+}
